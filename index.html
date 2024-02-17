@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+    <div class="container">
+      <h1 class="text-center my-4">Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+
+                <th scope="col">Image</th>
+                <th scope="col">Price</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">Banana</td>
+
+                <td class="productPrice">$0.99</td>
+                <td class="quantity"><input type="number" value="0" /></td>
+                 <td class="subTotal"></td>
+                <td><button class="btn btn-light btn-sm remove"><span class="glyphicon glyphicon-trash"></span></button></td>
+              </tr>
+              <tr>
+                <td class="name">Chicken</td>
+
+                <td class="productPrice">$9.99</td>
+                 <td class="quantity"><input type="number"  value="0" /></td>
+                <td class="subTotal"></td>
+                <td><button class="btn btn-light btn-sm remove"><span class="glyphicon glyphicon-trash"></button></td>
+              </tr>
+              <tr>
+                <td class="name">Tomato</td>
+
+                <td class="productPrice">$0.99</td>
+                 <td class="quantity"><input type="number"   value="0"/></td>
+                <td class="subTotal"></td>
+                 <td><button class="btn btn-light btn-sm remove"><span class="glyphicon glyphicon-trash"></button></tdz>
+              </tr>
+            <tr>
+              <td class="name">Onion</td>
+
+              <td class="productPrice">$0.99</td>
+               <td class="quantity"><input type="number"   value="0"/></td>
+              <td class="subTotal"></td>
+               <td><button class="btn btn-light btn-sm remove"><span class="glyphicon glyphicon-trash"></button></tdz>
+            </tr>
+            <tr>
+              <td class="name">Orange Juice</td>
+
+              <td class="productPrice">$2.99</td>
+               <td class="quantity"><input type="number"   value="0"/></td>
+              <td class="subTotal"></td>
+               <td><button class="btn btn-light btn-sm remove"><span class="glyphicon glyphicon-trash"></button></tdz>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+        <form class="col-12 mt-2 mb-4" id="addItem">
+          <select class="mx-2" name="product" required>
+            <option value="banana">Banana</option>
+            <option value="onion">Onion</option>
+            <option value="salmon">Salmon</option>
+            <option value="chicken">Chicken</option>
+            <option value="peppers">Pepper</option>
+            <option value="orangeJuice">Orange Juice</option>
+            <option value="tomato">Tomato</option>
+            <option value="deordarant">Deordarant</option>
+            <option value="shampoo">Shampoo</option>
+          </select>
+          <input class="mx-3" name="quantity" type="number" placeholder="Quantity"/>
+          <button class="btn btn-primary btn-sm">Add</button>
+        </form>
+
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+              
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+          <input type="submit" value="Place Order" />
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
